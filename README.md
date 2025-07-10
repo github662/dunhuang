@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ## Train
 - Train the model using input images and masks with a resolution of 256×256. During the training phase, randomly generated irregular masks are applied to artificially corrupt the images, simulating missing regions for the inpainting task.
 ```
-python train.py --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhuang --img_file /home/hwl/hwl/datasets/paris/paris_train_original/ --niter 261000 --batchSize 4 --lr 1e-4 --gpu_ids 1 --no_augment --no_flip --no_rotation 
+python train.py --name dunhuang  --img_file /home/hwl/hwl/datasets/paris/paris_train_original/ --niter 261000 --batchSize 4 --lr 1e-4 --gpu_ids 1 --no_augment --no_flip --no_rotation 
 ```
 - Set ```--mask_type``` in options/base_options.py to test various masks. ```--mask_file``` path is needed for **2 and 4 . random irregular mask**.
 - ```--lr``` is learn rate, train scratch is 1e-4, finetune is 1e-5.
@@ -67,11 +67,6 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 (a) Attention values were computed for one feature channel using the softmax and ReLU functions. We found that the ReLU function generated attention values that were more focused on essential contexts, compared to the dense attention values obtained from the softmax function. 
 
 (b) We compared the inpainting results obtained using these two attention mechanisms. Our Wsa-attention approach yielded superior results, as indicated by the improved completion of the building window in the Wsa-attention completion image, and the smaller FID value obtained by this method. Lower values of FID are indicative of better performance
-
-## License
-<br />
-The codes and the pre-trained models in this repository are under the MIT license as specificed by the LICENSE file.
-This code is for educational and academic research purpose only.
 
 ## Reference Codes
 - https://github.com/lyndonzheng/Pluralistic-Inpainting
