@@ -12,16 +12,16 @@ Learning-based image inpainting methods have made remarkable progress in recent 
 
 213
 88 ewe
-# Getting started  111·11
+# Getting started  
 ## Installation
 This code was tested with Pytoch 1.8.1 CUDA 11.1, Python 3.6 and Ubuntu 18.04
    
 - Create conda environment:2344 5
 
 ```
-conda create -n inpainting-py36 python=3.6
+conda create -n inpainting-dunhuang python=3.8
 conda deactivate
-conda activate inpainting-py36
+conda activate inpainting-dunhuang 
 pip install visdom dominate
 ```
 - Clone this repo:
@@ -29,7 +29,7 @@ pip install visdom dominate
 ```
 git clone https://github.com/huangwenwenlili/wsa-former
 cd wsa-former
-``` nmb
+```
 
 - Pip install libs:
 
