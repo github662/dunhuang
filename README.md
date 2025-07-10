@@ -3,7 +3,7 @@ Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sp
 
 
 <br>
-This is the code for Warse Self-Attention Transformer (Wsa-former) to reconstruct corrupted image. Given one image and mask, the proposed **Wsa-former** model is able to reconstruct masked regions. This code is adapted from an initial fork of [PIC](https://github.com/lyndonzheng/Pluralistic-Inpainting) implementation.
+This is the code for Warse Self-Attention Transformer (Wsa-former) to reconstruct corrupted image. Given one image and mask, the proposed **Wsa-former** model is able to reconstruct masked regions.
 
 ## Illustration of Wsa-former
 ![](https://github.com/huangwenwenlili/wsa-former/blob/main/images/wsa-former-architecture.png)
