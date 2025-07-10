@@ -25,7 +25,7 @@ conda deactivate
 conda activate inpainting-dunhuang 
 pip install visdom dominate
 ```
-- Clone this repo:
+- Clone this repo:1
 
 ```
 git clone https://github.com/github662/dunhuang
