@@ -1,5 +1,5 @@
 # wsa-former
-Code for the paper titled "Warse Self-Attention Transformer for Image Inpainting".
+Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sparse Transformer".
 
 
 <br>
