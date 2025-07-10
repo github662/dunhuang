@@ -29,7 +29,7 @@ pip install visdom dominate
 ```
 git clone https://github.com/huangwenwenlili/wsa-former
 cd wsa-former
-```
+``` nmb
 
 - Pip install libs:
 
