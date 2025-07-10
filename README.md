@@ -75,6 +75,7 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 ## Citation
 
 If you use this code for your research, please cite our paper.
+
 ```
 @article{huang2023wsaformer,
   title={Mural Image Inpainting via Mamba Prior and Wavelet-Sparse Transformer},
