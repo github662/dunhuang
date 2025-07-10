@@ -1,4 +1,4 @@
-# wsa-former
+# MP-WSA
 Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sparse Transformer".
 
 
@@ -8,14 +8,15 @@ This is the code for Warse Self-Attention Transformer (Wsa-former) to reconstruc
 ## Illustration of Wsa-former
 ![](https://github.com/huangwenwenlili/wsa-former/blob/main/images/wsa-former-architecture.png)
 
-Learning-based image inpainting methods have made remarkable progress in recent years. Nevertheless, these methods still suffer from issues such as blurring, artifacts, and inconsistent contents. The use of vanilla convolution kernels, which have limited perceptual fields and spatially invariant kernel coefficients, is one of the main causes for these problems. In contrast, the multi-headed attention in the transformer can effectively model non-local relations among input features by generating adaptive attention scores. Therefore, this paper explores the feasibility of employing the transformer model for the image inpainting task. However, the multi-headed attention transformer blocks pose a significant challenge due to their overwhelming computational cost. To address this issue, we propose a novel U-Net style transformer-based network for the inpainting task, called the sparse self-attention transformer (Spa-former). The Spa-former retains the long-range modeling capacity of transformer blocks while reducing the computational burden. It incorporates a new channel attention approximation algorithm that reduces attention calculation to linear complexity. Additionally, it replaces the canonical softmax function with the ReLU function to generate a sparse attention map that effectively excludes irrelevant features. As a result, the Spa-former achieves effective long-range feature modeling with fewer parameters and lower computational resources. Our empirical results on challenging benchmarks demonstrate the superior performance of our proposed Spa-former over state-of-the-art approaches.
+(1) In the field of mural heritage conservation and presentation, the inpainting of damaged mural images has gradually emerged as a prominent research focus. To address the challenges present in existing mural image inpainting algorithms, particularly the lack of global coherence and insufficient detail restoration in complex regions of the reconstructed images, this paper proposes a Mamba Prior and Wavelet-Sparse Transformer-based approach to enhance the quality of inpainting.
+(2) This paper presents a dual-branch mural image inpainting framework that integrates Mamba priors and wavelet sparse transformations. The prior-guided branch leverages the Mamba Prior module to model long-range dependencies and global semantic contexts, extracting coherent global prior features to guide the inpainting process and overcoming the limitations of static prior information. The backbone inpainting branch incorporates a Wavelet Sparse Attention module, employing multi-scale sparse modeling to effectively capture essential texture details while balancing detail extraction and computational efficiency. Additionally, a Gated Dynamic Tanh Feedforward module enhances nonlinear attention representation, thereby alleviating the suppression of fine details. During the upsampling process, prior-guided features are fused to improve structural inpainting and detail coherence, resulting in realistic and natural inpainting outcomes. Extensive experiments conducted on our custom-built dataset demonstrate that the proposed method achieves superior performance across multiple evaluation metrics, including PSNR, SSIM, LPIPS, and FID, while maintaining an efficient computational profile. This approach holds significant potential for the digital inpainting of murals, making a meaningful contribution to cultural heritage conservation and dissemination.   
 
 
 # Getting started  
 ## Installation
-This code was tested with Pytoch 1.8.1 CUDA 11.1, Python 3.6 and Ubuntu 18.04
+This code was tested with Pytoch 1.8.1 CUDA 11.4, Python 3.8 and Ubuntu 18.04
    
-- Create conda environment:2344 5
+- Create conda environment:
 
 ```
 conda create -n inpainting-dunhuang python=3.8
@@ -27,7 +28,7 @@ pip install visdom dominate
 
 ```
 git clone https://github.com/github662/dunhuang
-cd wsa-former
+cd dunhuang
 ```
 
 - Pip install libs:
@@ -82,8 +83,8 @@ This code is for educational and academic research purpose only.
 If you use this code for your research, please cite our paper.
 ```
 @article{huang2023wsaformer,
-  title={Warse Self-Attention Transformer for Image Inpainting},
-  author={Huang, Wenli and Deng, Ye and Hui, Siqi and Zhou, Sanping and Wang, Jinjun},
+  title={Mural Image Inpainting via Mamba Prior and Wavelet-Sparse Transformer},
+  author={Xu,Zhigang and Li，Jie},
   journal={},
   volume={},
   pages={},
