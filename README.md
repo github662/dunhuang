@@ -39,14 +39,12 @@ pip install -r requirements.txt
 ```
 
 ## Datasets
-- ```Paris StreetView```: It contains buildings of Paris of natural digital images. 14900 training images and 100 testing images. [Paris](https://github.com/pathak22/context-encoder)
-- ```CelebA-HQ```: It contains celebrity face images. 30000 images. [CelebA-HQ](https://github.com/switchablenorms/CelebAMask-HQ)
-- ```Places365-Standard```: It is the major part of the places2 dataset and was released by MIT. It has over 1.8 million training images and about 32K test images from 365 scene categories. We selected 1,000 pictures from the test set randomly to test the model. 
+
 
 ## Train
-- Train the model. Input images and masks resolution are 256*256. We produce random irregular mask to corrupt images for training stage.
+- Train the model using input images and masks with a resolution of 256×256. During the training phase, randomly generated irregular masks are applied to artificially corrupt the images, simulating missing regions for the inpainting task.
 ```
-python train.py --name paris --checkpoints_dir ./checkpoints/checkpoint_paris --img_file /home/hwl/hwl/datasets/paris/paris_train_original/ --niter 261000 --batchSize 4 --lr 1e-4 --gpu_ids 0 --no_augment --no_flip --no_rotation 
+python train.py --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhuang --img_file /home/hwl/hwl/datasets/paris/paris_train_original/ --niter 261000 --batchSize 4 --lr 1e-4 --gpu_ids 1 --no_augment --no_flip --no_rotation 
 ```
 - Set ```--mask_type``` in options/base_options.py to test various masks. ```--mask_file``` path is needed for **2 and 4 . random irregular mask**.
 - ```--lr``` is learn rate, train scratch is 1e-4, finetune is 1e-5.
@@ -56,7 +54,7 @@ python train.py --name paris --checkpoints_dir ./checkpoints/checkpoint_paris --
 - Test the model. Input images and masks resolution are 256*256. In the testing, we use [irregular mask dataset](https://github.com/NVIDIA/partialconv) to evaluate different ratios of corrupted region images.
 
 ```
-python test.py  --name paris --checkpoints_dir ./checkpoints/checkpoint_paris --gpu_ids 0 --img_file your_image_path --mask_file your_mask_path --batchSize 1 --results_dir your_image_result_path
+python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhuang --gpu_ids 0 --img_file your_image_path --mask_file your_mask_path --batchSize 1 --results_dir your_image_result_path
 ```
 - Set ```--mask_type``` in options/base_options.py to test various masks. ```--mask_file``` path is needed for **3. external irregular mask**,
 - The default results will be saved under the *results* folder. Set ```--results_dir``` for a new path to save the result.
