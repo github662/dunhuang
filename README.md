@@ -64,7 +64,7 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 
 ## Example Results
 - **Comparison results of softmax-based attention and our proposed MP-WSA**
-![](https://github.com/github662/dunhuang/blob/main/images/Mural Inpainting under Simulated Damage.svg)
+![](https://github.com/github662/dunhuang/blob/main/images/Mural_Inpainting_under_Simulated_Damage.svg)
 
 (a) Attea 
 
