@@ -63,12 +63,10 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 
 
 ## Example Results
-- **Comparison results of softmax-based attention and our proposed MP-WSA**
+- ** Mural_Inpainting_under_Simulated_Damage **
 ![](https://github.com/github662/dunhuang/blob/main/images/Mural_Inpainting_under_Simulated_Damage.svg)
 
-(a) Attea 
-
-(b) We compared the inpaiindow in the Wsa-a
+- Figs.(c)-(h) display inpainting results from different methods: RFR exhibits edge distortion, MISF shows insufficient structure-texture integration, CSWT produces partial blurring, T-former retains localized artifacts, U2FAN introduces visible artifacts, and HINT demonstrates minor inconsistencies. Our method (Fig. 6(i)) outperforms all comparisons in structural continuity, semantic coherence, and natural texture synthesis, with the wavelet sparse attention module notably enhancing cross-scale perception. However, room for improvement remains in handling large missing regions.
 ## Reference Codes
 - https://github.com/huangwenwenlili/spa-former
 - https://github.com/NVIDIA/partialconv
