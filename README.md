@@ -5,7 +5,7 @@ Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sp
 <br>
 This is the code for Warse Self-Attention Transformer (Wsa-former) to reconstruct corrupted image. Given one image and mask, the proposed **Wsa-former** model is able to reconstruct masked regions.
 
-## Illustration of Wsa-former
+## Illustration of MP-WSA
 ![](https://github.com/huangwenwenlili/wsa-former/blob/main/images/wsa-former-architecture.png)
 
 (1) In the field of mural heritage conservation and presentation, the inpainting of damaged mural images has gradually emerged as a prominent research focus. To address the challenges present in existing mural image inpainting algorithms, particularly the lack of global coherence and insufficient detail restoration in complex regions of the reconstructed images, this paper proposes a Mamba Prior and Wavelet-Sparse Transformer-based approach to enhance the quality of inpainting.
