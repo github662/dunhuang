@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ## Train
 - Train the model using input images and masks with a resolution of 256×256. During the training phase, randomly generated irregular masks are applied to artificially corrupt the images, simulating missing regions for the inpainting task.
 ```
-python train.py --name dunhuang  --img_file /home/hwl/hwl/datasets/paris/paris_train_original/ --niter 261000 --batchSize 4 --lr 1e-4 --gpu_ids 1 --no_augment --no_flip --no_rotation 
+python train.py --name dunhuang  --img_file your_image_path --mask_file your_mask_path --niter 300000 --batchSize 8 --lr 1e-4 --gpu_ids 1 --no_augment --no_flip --no_rotation 
 ```
 - Set ```--mask_type``` in options/base_options.py to test various masks. ```--mask_file``` path is needed for **2 and 4 . random irregular mask**.
 - ```--lr``` is learn rate, train scratch is 1e-4, finetune is 1e-5.
@@ -56,14 +56,14 @@ python train.py --name dunhuang  --img_file /home/hwl/hwl/datasets/paris/paris_t
 - Test the model. Input images and masks resolution are 256*256. In the testing, we use [irregular mask dataset](https://github.com/NVIDIA/partialconv) to evaluate different ratios of corrupted region images.
 
 ```
-python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhuang --gpu_ids 0 --img_file your_image_path --mask_file your_mask_path --batchSize 2 --results_dir your_image_result_path
+python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhuang --gpu_ids 1 --img_file your_image_path --mask_file your_mask_path --batchSize 2 --results_dir your_image_result_path
 ```
 - Set ```--mask_type``` in options/base_options.py to test various masks. ```--mask_file``` path is needed for **3. external irregular mask**,
 - The default results will be saved under the *results* folder. Set ```--results_dir``` for a new path to save the result.
 
 
 ## Example Results
-- **Comparison results of softmax-based attention and our proposed Wsa-attention**
+- **Comparison results of softmax-based attention and our proposed MP-WSA**
 ![](https://github.com/github662/dunhuang/blob/main/images/Denoising_Analysis)
 
 (a) Attention values were computed for one feature channel using the softmax and ReLU functions. We found that the ReLU function generated attention values that were more focused on essential contexts, compared to the dense attention values obtained from the softmax function. 
