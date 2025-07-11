@@ -3,7 +3,7 @@ Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sp
 
 
 <br>
-This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to reconstruct corrupted image. Given one image and mask, the proposed **MP-WSA** model is able to reconstruct masked regions.
+"This algorithm implements a mural image inpainting system based on the Mamba Prior and Wavelet-Sparse Transformer (MP-WSA). Given an input mural image and its corresponding damage region mask, the proposed MP-WSA model performs heritage-grade digital restoration of the occluded areas in cultural relic murals."
 
 
 ## Illustration of MP-WSA
@@ -56,7 +56,7 @@ python train.py --name dunhuang  --img_file /home/hwl/hwl/datasets/paris/paris_t
 - Test the model. Input images and masks resolution are 256*256. In the testing, we use [irregular mask dataset](https://github.com/NVIDIA/partialconv) to evaluate different ratios of corrupted region images.
 
 ```
-python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhuang --gpu_ids 0 --img_file your_image_path --mask_file your_mask_path --batchSize 1 --results_dir your_image_result_path
+python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhuang --gpu_ids 0 --img_file your_image_path --mask_file your_mask_path --batchSize 2 --results_dir your_image_result_path
 ```
 - Set ```--mask_type``` in options/base_options.py to test various masks. ```--mask_file``` path is needed for **3. external irregular mask**,
 - The default results will be saved under the *results* folder. Set ```--results_dir``` for a new path to save the result.
@@ -79,7 +79,7 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 If you use this code for your research, please cite our paper.
 
 ```
-@article{huang2023wsaformer,
+@article{xu2025mp-wsa,
   title={Mural Image Inpainting via Mamba Prior and Wavelet-Sparse Transformer},
   author={Xu,Zhigang and Li，Jie},
   journal={},
