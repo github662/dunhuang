@@ -64,12 +64,11 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 
 ## Example Results
 - **Comparison results of softmax-based attention and our proposed MP-WSA**
-![](https://github.com/github662/dunhuang/blob/main/images/Denoising_Analysis)
+![](https://github.com/github662/dunhuang/blob/main/images/Mural Inpainting under Simulated Damage.svg)
 
-(a) Attention values were computed for one feature channel using the softmax and ReLU functions. We found that the ReLU function generated attention values that were more focused on essential contexts, compared to the dense attention values obtained from the softmax function. 
+(a) Attea 
 
-(b) We compared the inpainting results obtained using these two attention mechanisms. Our Wsa-attention approach yielded superior results, as indicated by the improved completion of the building window in the Wsa-attention completion image, and the smaller FID value obtained by this method. Lower values of FID are indicative of better performance
-
+(b) We compared the inpaiindow in the Wsa-a
 ## Reference Codes
 - https://github.com/huangwenwenlili/spa-former
 - https://github.com/NVIDIA/partialconv
