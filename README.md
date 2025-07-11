@@ -5,8 +5,9 @@ Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sp
 <br>
 This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to reconstruct corrupted image. Given one image and mask, the proposed **MP-WSA** model is able to reconstruct masked regions.
 
+
 ## Illustration of MP-WSA
-![](https://github.com/huangwenwenlili/wsa-former/blob/main/images/wsa-former-architecture.png)
+![](https://github.com/github662/dunhuang/blob/main/images/%E6%A1%86%E5%9B%BE.svg)
 
 (1) In the field of mural heritage conservation and presentation, the inpainting of damaged mural images has gradually emerged as a prominent research focus. To address the challenges present in existing mural image inpainting algorithms, particularly the lack of global coherence and insufficient detail restoration in complex regions of the reconstructed images, this paper proposes a Mamba Prior and Wavelet-Sparse Transformer-based approach to enhance the quality of inpainting.
 
@@ -17,7 +18,7 @@ This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to recon
 ## Installation
 This code was tested with Pytoch 1.8.1 CUDA 11.4, Python 3.8 and Ubuntu 18.04
    
-- Create conda environment:
+- Create conda environment: 11
 
 ```
 conda create -n inpainting-dunhuang python=3.8
