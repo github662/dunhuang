@@ -7,7 +7,7 @@ This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to recon
 
 
 ## Illustration of MP-WSA
-![](https://github.com/github662/dunhuang/blob/main/images/Overall_Network_Architecture.svg)
+![](https://github.com/github662/dunhuang/tree/main/images/Overall_Network_Architecture.svg)
 
 (1) In the field of mural heritage conservation and presentation, the inpainting of damaged mural images has gradually emerged as a prominent research focus. To address the challenges present in existing mural image inpainting algorithms, particularly the lack of global coherence and insufficient detail restoration in complex regions of the reconstructed images, this paper proposes a Mamba Prior and Wavelet-Sparse Transformer-based approach to enhance the quality of inpainting.
 
