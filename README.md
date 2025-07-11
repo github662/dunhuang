@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 ## Datasets
-- ```Dunhuang Art Digital Restoration Dataset```: It contains a dataset of Dunhuang murals from natural digital images.
+- ```Dunhuang mural color painting replication dataset```: It contains a dataset of Dunhuang murals from natural digital images.
 [](https://github.com/github662/-)
 
 ## Train
