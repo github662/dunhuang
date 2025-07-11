@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## Datasets
 - ```Dunhuang mural color painting replication dataset```: It contains a dataset of Dunhuang murals from natural digital images.
-[](https://github.com/github662/-)
+- https://github.com/github662/-
 
 ## Train
 - Train the model using input images and masks with a resolution of 256×256. During the training phase, randomly generated irregular masks are applied to artificially corrupt the images, simulating missing regions for the inpainting task.
