@@ -7,7 +7,7 @@ This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to recon
 
 
 ## Illustration of MP-WSA
-![](https://github.com/github662/dunhuang/blob/main/images/%E6%A1%86%E5%9B%BE.svg)
+![](https://github.com/github662/dunhuang/blob/main/images/Overall_Network_Architecture.svg)
 
 (1) In the field of mural heritage conservation and presentation, the inpainting of damaged mural images has gradually emerged as a prominent research focus. To address the challenges present in existing mural image inpainting algorithms, particularly the lack of global coherence and insufficient detail restoration in complex regions of the reconstructed images, this paper proposes a Mamba Prior and Wavelet-Sparse Transformer-based approach to enhance the quality of inpainting.
 
@@ -16,7 +16,7 @@ This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to recon
 
 # Getting started  
 ## Installation
-This code was tested with Pytoch 1.8.1 CUDA 11.4, Python 3.8 and Ubuntu 18.04
+This code was tested with Pytoch 1.8.1 CUDA 11.4, Python 3.8 and Ubuntu 22.04
    
 - Create conda environment: 
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## Datasets
 - ```Dunhuang Art Digital Restoration Dataset```: It contains a dataset of Dunhuang murals from natural digital images.
-[Paris](https://github.com/github662/-)
+[](https://github.com/github662/-)
 
 ## Train
 - Train the model using input images and masks with a resolution of 256×256. During the training phase, randomly generated irregular masks are applied to artificially corrupt the images, simulating missing regions for the inpainting task.
@@ -64,7 +64,7 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 
 ## Example Results
 - **Comparison results of softmax-based attention and our proposed Wsa-attention**
-![](https://github.com/huangwenwenlili/wsa-former/blob/main/images/wsa-intr.png)
+![](https://github.com/github662/dunhuang/blob/main/images/Denoising_Analysis)
 
 (a) Attention values were computed for one feature channel using the softmax and ReLU functions. We found that the ReLU function generated attention values that were more focused on essential contexts, compared to the dense attention values obtained from the softmax function. 
 
