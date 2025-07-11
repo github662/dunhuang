@@ -70,7 +70,7 @@ python test.py  --name dunhuang --checkpoints_dir ./checkpoints/checkpoint_dunhu
 (b) We compared the inpainting results obtained using these two attention mechanisms. Our Wsa-attention approach yielded superior results, as indicated by the improved completion of the building window in the Wsa-attention completion image, and the smaller FID value obtained by this method. Lower values of FID are indicative of better performance
 
 ## Reference Codes
-- https://github.com/lyndonzheng/Pluralistic-Inpainting
+- https://github.com/huangwenwenlili/spa-former
 - https://github.com/NVIDIA/partialconv
 
 ## Citation
