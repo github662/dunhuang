@@ -3,7 +3,7 @@ Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sp
 
 
 <br>
-This is the code for Warse Self-Attention Transformer (Wsa-former) to reconstruct corrupted image. Given one image and mask, the proposed **Wsa-former** model is able to reconstruct masked regions.
+This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to reconstruct corrupted image. Given one image and mask, the proposed **MP-WSA** model is able to reconstruct masked regions.
 
 ## Illustration of MP-WSA
 ![](https://github.com/huangwenwenlili/wsa-former/blob/main/images/wsa-former-architecture.png)
@@ -39,7 +39,8 @@ pip install -r requirements.txt
 ```
 
 ## Datasets
-
+- ```Dunhuang Art Digital Restoration Dataset```: It contains a dataset of Dunhuang murals from natural digital images.
+[Paris](https://github.com/github662/-)
 
 ## Train
 - Train the model using input images and masks with a resolution of 256×256. During the training phase, randomly generated irregular masks are applied to artificially corrupt the images, simulating missing regions for the inpainting task.
