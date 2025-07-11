@@ -18,7 +18,7 @@ This is the code for amba Prior and Wavelet-Sparse Transformer (MP-WSA) to recon
 ## Installation
 This code was tested with Pytoch 1.8.1 CUDA 11.4, Python 3.8 and Ubuntu 18.04
    
-- Create conda environment: 11
+- Create conda environment: 
 
 ```
 conda create -n inpainting-dunhuang python=3.8
@@ -26,7 +26,7 @@ conda deactivate
 conda activate inpainting-dunhuang 
 pip install visdom dominate
 ```
-- Clone this repo:1
+- Clone this repo:
 
 ```
 git clone https://github.com/github662/dunhuang
