@@ -3,7 +3,7 @@ Code for the paper titled " Enhancing Mural Inpainting: A Dual-Branch Approach I
 
 
 <br>
-"This algorithm implements a mural image inpainting system based on the Mamba Prior and Wavelet-Sparse Transformer (MP-WSA). Given an input mural image and its corresponding damage region mask, the proposed MP-WSA model performs heritage-grade digital restoration of the occluded areas in cultural relic murals."
+"This algorithm implements Enhancing Mural Inpainting: A Dual-Branch Approach Integrating Mamba Priors and Wavelet-Sparse Transformers (MP-WSA). Given an input mural image and its corresponding damage region mask, the proposed MP-WSA model performs heritage-grade digital restoration of the occluded areas in cultural relic murals."
 
 
 ## Illustration of MP-WSA
