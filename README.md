@@ -1,5 +1,5 @@
 # MP-WSA
-Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sparse Transformer".
+Code for the paper titled " Enhancing Mural Inpainting: A Dual-Branch Approach Integrating Mamba Priors and Wavelet-Sparse Transformers".
 
 
 <br>
@@ -16,6 +16,7 @@ Code for the paper titled "Mural Image Inpainting via Mamba Prior and Wavelet-Sp
 
 # Getting started  
 ## Installation
+
 This code was tested with Pytoch 1.8.1 CUDA 11.4, Python 3.8 and Ubuntu 22.04
    
 - Create conda environment: 
