@@ -365,7 +365,7 @@ class GaussianSmoothing(nn.Module):
         kernel_size (int, sequence): Size of the gaussian kernel.
         sigma (float, sequence): Standard deviation of the gaussian kernel.
         dim (int, optional): The number of dimensions of the data.
-            Default value is 2 (wsatial).
+            Default value is 2 (spatial).
     https://discuss.pytorch.org/t/is-there-anyway-to-do-gaussian-filtering-for-an-image-2d-3d-in-pytorch/12351/9
     """
     def __init__(self, channels, kernel_size=3, sigma=1, dim=2):
